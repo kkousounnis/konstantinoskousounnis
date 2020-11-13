@@ -18,11 +18,7 @@ public class Game extends Naming implements IGame {
 
     @Override
     public void start(Player[] players) {
-//        System.out.println(this.getName());
-//        System.out.println("Player " + players[0]
-//                + " plays against Player " + players[1]);
-//        this.players = players;
-        int TotalTime = (4 * 15) * 10; // 4 * 15" == 1' * 10 == 10'
+        int TotalTime = 600; 
         Clock c = new Clock(TotalTime);
         this.playersMove(players, c);
     }
